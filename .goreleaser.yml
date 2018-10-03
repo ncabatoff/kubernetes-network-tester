@@ -1,0 +1,14 @@
+builds:
+  - main: main.go
+    binary: kubernetes-network-tester
+    flags: -tags netgo
+    goos:
+      - linux
+    goarch:
+      - amd64
+release:
+  github:
+    owner: ncabatoff
+    name: kubernetes-network-tester
+  draft: true
+  prerelease: true
